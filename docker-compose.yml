@@ -1,0 +1,19 @@
+version: '3'
+services: 
+    python:
+        build: ./docker/python
+        volumes:
+            - ./:/home/python/app
+            - ./config/static:/home/python/app/config/static
+        expose:
+            - 8001
+    nginx:
+        build: ./docker/nginx
+        ports:
+          - 80:80
+        volumes:
+          - ./docker/nginx/conf:/etc/nginx/conf.d
+          - ./docker/nginx/uwsgi_params:/etc/nginx/uwsgi_params
+          - ./config/static:/home/python/app/config/static
+        depends_on:
+          - python
