@@ -6,7 +6,7 @@
         {
             "label": "run uwsgi",
             "type": "shell",
-            "command": "uwsgi --chdir /home/python/app/config --module config.wsgi:application"
+            "command": "uwsgi --socket :8001 --chdir /home/python/app/config --module config.wsgi:application"
         }
     ]
 }
