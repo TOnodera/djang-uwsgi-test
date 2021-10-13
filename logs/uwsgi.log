@@ -1,0 +1,578 @@
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Oct 13 10:05:09 2021] ***
+compiled with version: 8.3.0 on 13 October 2021 09:17:10
+os: Linux-4.15.0-159-generic #167-Ubuntu SMP Tue Sep 21 08:55:05 UTC 2021
+nodename: 241c15bff2f8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /home/python/app
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/python/app
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8001 fd 3
+Python version: 3.8.3 (default, Jun  9 2020, 17:39:39)  [GCC 8.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55b5f974a880
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 180794 bytes (176 KB) for 1 cores
+*** Operational MODE: single process ***
+ModuleNotFoundError: No module named 'config.wsgi'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2948)
+spawned uWSGI worker 1 (pid: 2949, cores: 1)
+uwsgi_proto_uwsgi_parser(): Resource temporarily unavailable [proto/uwsgi.c line 40]
+--- no python application found, check your startup logs for errors ---
+[pid: 2949|app: -1|req: -1/1] 172.22.0.1 () {54 vars in 1028 bytes} [Wed Oct 13 10:05:22 2021] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 2949|app: -1|req: -1/2] 172.22.0.1 () {52 vars in 955 bytes} [Wed Oct 13 10:05:23 2021] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Oct 13 10:06:24 2021] ***
+compiled with version: 8.3.0 on 13 October 2021 09:17:10
+os: Linux-4.15.0-159-generic #167-Ubuntu SMP Tue Sep 21 08:55:05 UTC 2021
+nodename: 241c15bff2f8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /home/python/app
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/python/app/config
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8001 fd 3
+Python version: 3.8.3 (default, Jun  9 2020, 17:39:39)  [GCC 8.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55ec9af4a8a0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 180794 bytes (176 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55ec9af4a8a0 pid: 3292 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3292)
+spawned uWSGI worker 1 (pid: 3294, cores: 1)
+[pid: 3294|app: 0|req: 1/1] 172.22.0.1 () {56 vars in 1059 bytes} [Wed Oct 13 10:06:34 2021] GET / => generated 10697 bytes in 17 msecs (HTTP/1.1 200) 5 headers in 153 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 3294|app: 0|req: 2/2] 172.22.0.1 () {56 vars in 1008 bytes} [Wed Oct 13 10:06:35 2021] GET /favicon.ico => generated 2105 bytes in 10 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 3294|app: 0|req: 3/3] 172.22.0.1 () {56 vars in 1059 bytes} [Wed Oct 13 10:06:36 2021] GET / => generated 10697 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 153 bytes (1 switches on core 0)
+[pid: 3294|app: 0|req: 4/4] 172.22.0.1 () {56 vars in 1059 bytes} [Wed Oct 13 10:06:37 2021] GET / => generated 10697 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 153 bytes (1 switches on core 0)
+Gracefully killing worker 1 (pid: 3294)...
+...gracefully killing workers...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/python/app
+closing all non-uwsgi socket fds > 2 (max_fd = 1048576)...
+found fd 3 mapped to socket 0 (:8001)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from /home/python/app/config/uwsgi.ini
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Oct 13 10:35:25 2021] ***
+compiled with version: 8.3.0 on 13 October 2021 09:17:10
+os: Linux-4.15.0-159-generic #167-Ubuntu SMP Tue Sep 21 08:55:05 UTC 2021
+nodename: 241c15bff2f8
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /home/python/app
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/python/app/config
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address :8001 fd 3
+Python version: 3.8.3 (default, Jun  9 2020, 17:39:39)  [GCC 8.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x557cfb2b6800
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 180794 bytes (176 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x557cfb2b6800 pid: 3292 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 3292)
+spawned uWSGI worker 1 (pid: 8538, cores: 1)
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Oct 13 10:50:38 2021] ***
+compiled with version: 8.3.0 on 13 October 2021 09:17:10
+os: Linux-4.15.0-159-generic #167-Ubuntu SMP Tue Sep 21 08:55:05 UTC 2021
+nodename: 02b66b59a7fa
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /home/python/app
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/python/app/config
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8001 fd 3
+Python version: 3.8.3 (default, Jun  9 2020, 17:39:39)  [GCC 8.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55d5208f0890
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 180794 bytes (176 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55d5208f0890 pid: 610 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 610)
+spawned uWSGI worker 1 (pid: 612, cores: 1)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 612)...
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Oct 13 11:03:14 2021] ***
+compiled with version: 8.3.0 on 13 October 2021 09:17:10
+os: Linux-4.15.0-159-generic #167-Ubuntu SMP Tue Sep 21 08:55:05 UTC 2021
+nodename: e3b0ed82c875
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /home/python/app
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/python/app/config
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8001 fd 3
+Python version: 3.8.3 (default, Jun  9 2020, 17:39:39)  [GCC 8.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55a774597890
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 180794 bytes (176 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55a774597890 pid: 634 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 634)
+spawned uWSGI worker 1 (pid: 636, cores: 1)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 636)...
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Oct 13 11:06:49 2021] ***
+compiled with version: 8.3.0 on 13 October 2021 09:17:10
+os: Linux-4.15.0-159-generic #167-Ubuntu SMP Tue Sep 21 08:55:05 UTC 2021
+nodename: 33f43488c66a
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /home/python/app
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/python/app/config
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8001 fd 3
+Python version: 3.8.3 (default, Jun  9 2020, 17:39:39)  [GCC 8.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55f0e6f30890
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 180794 bytes (176 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55f0e6f30890 pid: 781 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 781)
+spawned uWSGI worker 1 (pid: 789, cores: 1)
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Oct 13 11:19:00 2021] ***
+compiled with version: 8.3.0 on 13 October 2021 09:17:10
+os: Linux-4.15.0-159-generic #167-Ubuntu SMP Tue Sep 21 08:55:05 UTC 2021
+nodename: 36e76f5a3dac
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /home/python/app
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/python/app/config
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8001 fd 3
+Python version: 3.8.3 (default, Jun  9 2020, 17:39:39)  [GCC 8.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5633e34af890
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 180794 bytes (176 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5633e34af890 pid: 666 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 666)
+spawned uWSGI worker 1 (pid: 668, cores: 1)
+Gracefully killing worker 1 (pid: 668)...
+...gracefully killing workers...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/python/app
+closing all non-uwsgi socket fds > 2 (max_fd = 1048576)...
+found fd 3 mapped to socket 0 (:8001)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from config/uwsgi.ini
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Oct 13 11:19:42 2021] ***
+compiled with version: 8.3.0 on 13 October 2021 09:17:10
+os: Linux-4.15.0-159-generic #167-Ubuntu SMP Tue Sep 21 08:55:05 UTC 2021
+nodename: 36e76f5a3dac
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /home/python/app
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/python/app/config
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address :8001 fd 3
+Python version: 3.8.3 (default, Jun  9 2020, 17:39:39)  [GCC 8.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x559e266be7f0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 180794 bytes (176 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x559e266be7f0 pid: 666 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 666)
+spawned uWSGI worker 1 (pid: 860, cores: 1)
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Oct 13 11:21:12 2021] ***
+compiled with version: 8.3.0 on 13 October 2021 09:17:10
+os: Linux-4.15.0-159-generic #167-Ubuntu SMP Tue Sep 21 08:55:05 UTC 2021
+nodename: c930c2d4291e
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /home/python/app
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/python/app/config
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8001 fd 3
+Python version: 3.8.3 (default, Jun  9 2020, 17:39:39)  [GCC 8.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55fe208fa890
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 180794 bytes (176 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55fe208fa890 pid: 667 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 667)
+spawned uWSGI worker 1 (pid: 669, cores: 1)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Oct 13 11:22:55 2021] ***
+compiled with version: 8.3.0 on 13 October 2021 09:17:10
+os: Linux-4.15.0-159-generic #167-Ubuntu SMP Tue Sep 21 08:55:05 UTC 2021
+nodename: c930c2d4291e
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /home/python/app
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/python/app/config
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+error removing unix socket, unlink(): Is a directory [core/socket.c line 198]
+bind(): Address already in use [core/socket.c line 230]
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Oct 13 11:23:02 2021] ***
+compiled with version: 8.3.0 on 13 October 2021 09:17:10
+os: Linux-4.15.0-159-generic #167-Ubuntu SMP Tue Sep 21 08:55:05 UTC 2021
+nodename: c930c2d4291e
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /home/python/app
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/python/app/config
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+error removing unix socket, unlink(): Is a directory [core/socket.c line 198]
+bind(): Address already in use [core/socket.c line 230]
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Oct 13 11:23:15 2021] ***
+compiled with version: 8.3.0 on 13 October 2021 09:17:10
+os: Linux-4.15.0-159-generic #167-Ubuntu SMP Tue Sep 21 08:55:05 UTC 2021
+nodename: c930c2d4291e
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /home/python/app
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/python/app/config
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+error removing unix socket, unlink(): Is a directory [core/socket.c line 198]
+bind(): Address already in use [core/socket.c line 230]
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Oct 13 11:23:28 2021] ***
+compiled with version: 8.3.0 on 13 October 2021 09:17:10
+os: Linux-4.15.0-159-generic #167-Ubuntu SMP Tue Sep 21 08:55:05 UTC 2021
+nodename: c930c2d4291e
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /home/python/app
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/python/app/config
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+error removing unix socket, unlink(): Is a directory [core/socket.c line 198]
+bind(): Address already in use [core/socket.c line 230]
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Oct 13 11:23:52 2021] ***
+compiled with version: 8.3.0 on 13 October 2021 09:17:10
+os: Linux-4.15.0-159-generic #167-Ubuntu SMP Tue Sep 21 08:55:05 UTC 2021
+nodename: c930c2d4291e
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /home/python/app
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/python/app/config
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+error removing unix socket, unlink(): Is a directory [core/socket.c line 198]
+bind(): Address already in use [core/socket.c line 230]
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Oct 13 11:23:59 2021] ***
+compiled with version: 8.3.0 on 13 October 2021 09:17:10
+os: Linux-4.15.0-159-generic #167-Ubuntu SMP Tue Sep 21 08:55:05 UTC 2021
+nodename: c930c2d4291e
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /home/python/app
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/python/app/config
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8001 fd 3
+Python version: 3.8.3 (default, Jun  9 2020, 17:39:39)  [GCC 8.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x559cc70f3890
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 180794 bytes (176 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x559cc70f3890 pid: 1438 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1438)
+spawned uWSGI worker 1 (pid: 1440, cores: 1)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 0 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Oct 13 11:24:19 2021] ***
+compiled with version: 8.3.0 on 13 October 2021 09:17:10
+os: Linux-4.15.0-159-generic #167-Ubuntu SMP Tue Sep 21 08:55:05 UTC 2021
+nodename: c930c2d4291e
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /home/python/app
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/python/app/config
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+error removing unix socket, unlink(): Is a directory [core/socket.c line 198]
+bind(): Address already in use [core/socket.c line 230]
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Oct 13 11:27:09 2021] ***
+compiled with version: 8.3.0 on 13 October 2021 09:17:10
+os: Linux-4.15.0-159-generic #167-Ubuntu SMP Tue Sep 21 08:55:05 UTC 2021
+nodename: a8f420638ff2
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /home/python/app
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/python/app/config
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /var/socket/app.sock fd 3
+Python version: 3.8.3 (default, Jun  9 2020, 17:39:39)  [GCC 8.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55facfcb97c0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 180794 bytes (176 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55facfcb97c0 pid: 575 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 575)
+spawned uWSGI worker 1 (pid: 601, cores: 1)
+[pid: 601|app: 0|req: 1/1] 172.24.0.1 () {56 vars in 1059 bytes} [Wed Oct 13 11:27:21 2021] GET / => generated 10697 bytes in 17 msecs (HTTP/1.1 200) 5 headers in 153 bytes (1 switches on core 0)
+[pid: 601|app: 0|req: 2/2] 172.24.0.1 () {56 vars in 1059 bytes} [Wed Oct 13 11:27:22 2021] GET / => generated 10697 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 153 bytes (1 switches on core 0)
+[pid: 601|app: 0|req: 3/3] 172.24.0.1 () {56 vars in 1059 bytes} [Wed Oct 13 11:27:22 2021] GET / => generated 10697 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 153 bytes (1 switches on core 0)
+[pid: 601|app: 0|req: 4/4] 172.24.0.1 () {56 vars in 1059 bytes} [Wed Oct 13 11:27:22 2021] GET / => generated 10697 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 153 bytes (1 switches on core 0)
+[pid: 601|app: 0|req: 5/5] 172.24.0.1 () {56 vars in 1059 bytes} [Wed Oct 13 11:27:23 2021] GET / => generated 10697 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 153 bytes (1 switches on core 0)
+Gracefully killing worker 1 (pid: 601)...
+...gracefully killing workers...
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Oct 13 11:28:49 2021] ***
+compiled with version: 8.3.0 on 13 October 2021 09:17:10
+os: Linux-4.15.0-159-generic #167-Ubuntu SMP Tue Sep 21 08:55:05 UTC 2021
+nodename: 30284e06b0b9
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /home/python/app
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/python/app/config
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /var/socket/app.sock fd 3
+Python version: 3.8.3 (default, Jun  9 2020, 17:39:39)  [GCC 8.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55d4fc4ca7c0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 180794 bytes (176 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55d4fc4ca7c0 pid: 557 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 557)
+spawned uWSGI worker 1 (pid: 559, cores: 1)
+[pid: 559|app: 0|req: 1/1] 172.24.0.1 () {56 vars in 1059 bytes} [Wed Oct 13 11:28:56 2021] GET / => generated 10697 bytes in 18 msecs (HTTP/1.1 200) 5 headers in 153 bytes (1 switches on core 0)
+[pid: 559|app: 0|req: 2/2] 172.24.0.1 () {56 vars in 1059 bytes} [Wed Oct 13 11:28:57 2021] GET / => generated 10697 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 153 bytes (1 switches on core 0)
+[pid: 559|app: 0|req: 3/3] 172.24.0.1 () {56 vars in 1059 bytes} [Wed Oct 13 11:28:58 2021] GET / => generated 10697 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 153 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 559)...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/python/app
+closing all non-uwsgi socket fds > 2 (max_fd = 1048576)...
+found fd 3 mapped to socket 0 (/var/socket/app.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from config/uwsgi.ini
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Oct 13 11:29:35 2021] ***
+compiled with version: 8.3.0 on 13 October 2021 09:17:10
+os: Linux-4.15.0-159-generic #167-Ubuntu SMP Tue Sep 21 08:55:05 UTC 2021
+nodename: 30284e06b0b9
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /home/python/app
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/python/app/config
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /var/socket/app.sock fd 3
+Python version: 3.8.3 (default, Jun  9 2020, 17:39:39)  [GCC 8.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5641b3576720
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 180794 bytes (176 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5641b3576720 pid: 557 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 557)
+spawned uWSGI worker 1 (pid: 875, cores: 1)
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Oct 13 11:32:23 2021] ***
+compiled with version: 8.3.0 on 13 October 2021 09:17:10
+os: Linux-4.15.0-159-generic #167-Ubuntu SMP Tue Sep 21 08:55:05 UTC 2021
+nodename: 10465348b54d
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /home/python/app
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/python/app/config
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /var/socket/app.sock fd 3
+Python version: 3.8.3 (default, Jun  9 2020, 17:39:39)  [GCC 8.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x560aab79e7c0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 180794 bytes (176 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x560aab79e7c0 pid: 604 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 604)
+spawned uWSGI worker 1 (pid: 606, cores: 1)
+[pid: 606|app: 0|req: 1/1] 172.25.0.1 () {56 vars in 1059 bytes} [Wed Oct 13 11:32:25 2021] GET / => generated 10697 bytes in 19 msecs (HTTP/1.1 200) 5 headers in 153 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 0 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Oct 13 11:33:39 2021] ***
+compiled with version: 8.3.0 on 13 October 2021 09:17:10
+os: Linux-4.15.0-159-generic #167-Ubuntu SMP Tue Sep 21 08:55:05 UTC 2021
+nodename: bc55d4c42a2d
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /home/python/app
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/python/app/config
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /var/socket/app.sock fd 3
+Python version: 3.8.3 (default, Jun  9 2020, 17:39:39)  [GCC 8.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55aeda17a7c0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 180794 bytes (176 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55aeda17a7c0 pid: 574 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 574)
+spawned uWSGI worker 1 (pid: 576, cores: 1)
+[pid: 576|app: 0|req: 1/1] 172.25.0.1 () {56 vars in 1059 bytes} [Wed Oct 13 11:33:42 2021] GET / => generated 10697 bytes in 16 msecs (HTTP/1.1 200) 5 headers in 153 bytes (1 switches on core 0)
+[pid: 576|app: 0|req: 2/2] 172.25.0.1 () {56 vars in 1059 bytes} [Wed Oct 13 11:33:43 2021] GET / => generated 10697 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 153 bytes (1 switches on core 0)
+[pid: 576|app: 0|req: 3/3] 172.25.0.1 () {56 vars in 1059 bytes} [Wed Oct 13 11:33:43 2021] GET / => generated 10697 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 153 bytes (1 switches on core 0)
+[pid: 576|app: 0|req: 4/4] 172.25.0.1 () {56 vars in 1059 bytes} [Wed Oct 13 11:33:44 2021] GET / => generated 10697 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 153 bytes (1 switches on core 0)
+[pid: 576|app: 0|req: 5/5] 172.25.0.1 () {56 vars in 1059 bytes} [Wed Oct 13 11:33:44 2021] GET / => generated 10697 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 153 bytes (1 switches on core 0)

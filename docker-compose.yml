@@ -5,6 +5,7 @@ services:
         volumes:
             - ./:/home/python/app
             - ./config/static:/home/python/app/config/static
+            - socket_volume:/var/socket
         expose:
             - 8001
     nginx:
@@ -15,5 +16,8 @@ services:
           - ./docker/nginx/conf:/etc/nginx/conf.d
           - ./docker/nginx/uwsgi_params:/etc/nginx/uwsgi_params
           - ./config/static:/home/python/app/config/static
+          - socket_volume:/var/socket
         depends_on:
           - python
+volumes:
+  socket_volume:

@@ -10,4 +10,8 @@ WORKDIR /home/python/app
 RUN useradd -u 1000 -o python && \
     chown -R python:python /home/python
 
+WORKDIR /var/socket
+RUN chown -R python:python /var/socket
 USER python
+
+# CMD ["uwsgi","--ini","/hoem/python/app/config/uwsgi.ini"]
